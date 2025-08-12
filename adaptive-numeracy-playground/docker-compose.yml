@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  server:
+    build: ./server
+    volumes:
+      - ./server:/app
+      - ./server/data.db:/app/data.db
+    ports:
+      - "4000:4000"
+  client:
+    build: ./client
+    volumes:
+      - ./client:/app
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_URL=http://localhost:4000
+    depends_on:
+      - server

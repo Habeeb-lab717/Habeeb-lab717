@@ -1,0 +1,32 @@
+adaptive-numeracy-playground/
+├─ server/
+│  ├─ package.json
+│  ├─ Dockerfile
+│  ├─ src/
+│  │  ├─ index.js
+│  │  ├─ db.js
+│  │  ├─ seed.js
+│  │  ├─ routes/
+│  │  │  ├─ problems.js
+│  │  │  ├─ classes.js
+│  │  │  └─ results.js
+│  └─ data/
+│     └─ db.sqlite3    # created at runtime
+├─ client/
+│  ├─ package.json
+│  ├─ Dockerfile
+│  ├─ postcss.config.js
+│  ├─ tailwind.config.js
+│  └─ src/
+│     ├─ main.jsx
+│     ├─ index.css
+│     ├─ App.jsx
+│     ├─ pages/
+│     │  ├─ StudentPractice.jsx
+│     │  └─ TeacherDashboard.jsx
+│     └─ components/
+│        ├─ ProblemCard.jsx
+│        └─ Header.jsx
+├─ docker-compose.yml
+├─ README.md
+└─ LICENSE (MIT)
